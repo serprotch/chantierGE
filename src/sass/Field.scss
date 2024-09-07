@@ -1,0 +1,59 @@
+// Field.scss
+.form-group {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  
+  label {
+    font-family: 'Inter';
+    color: #fff;
+    margin-left: 10px;
+    font-size: 0.9em;
+  }
+
+  .form-control {
+    background: #EEEEEE;
+    border-radius: 10px;
+    height: 30px;
+    transition: all 0.3s ease;
+    
+    &.is-invalid {
+      border-color: #dc3545;
+      background: #f8d7da; 
+      color: #721c24; 
+      
+      &:focus {
+        border-color: #dc3545;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+      }
+    }
+  }
+
+  .textarea-field {
+    height: 110px;
+    resize: vertical;
+    overflow: auto;
+  }
+
+  .invalid-feedback {
+    display: block;
+    font-size: 0.875rem;
+    color: #dc3545; 
+    margin-top: 0.25rem;
+    animation: fadeIn 0.3s ease-in-out;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      content: '⚠️ '; 
+    }
+  }
+}
