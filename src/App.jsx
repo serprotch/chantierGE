@@ -49,7 +49,7 @@ function App() {
             <InputField label="Nom et Prénoms" type="text" name="name" value={form.name} onChange={handleChange} />
 
             {/* Phone & Email */}
-            <div className="flex-field">
+            <div className="form-row--group">
               <InputField label="Téléphone" type="tel" name="phone" value={form.phone} onChange={handleChange} pattern="[0-9]*" inputMode="numeric"/>
               <InputField label="Email" type="email" name="email" value={form.email || ''} onChange={handleChange} />
             </div>
@@ -69,16 +69,16 @@ function App() {
         {/* Social links */}
         <div className="social-block">
         <div className="maintenance-content__social">
-                    <a href="" className='single-icon'>
+        <a href="https://www.facebook.com/groupelecomplexe/" className='single-icon' target="_blank">
                         <FaFacebookF color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://www.instagram.com/groupe_empire/" className='single-icon' target="_blank">
                         <AiFillInstagram color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://twitter.com/groupe_empire" className='single-icon' target="_blank">
                         <FaTwitter color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://www.youtube.com/@groupeempire7861" className='single-icon' target="_blank">
                         <FaYoutube color='494646' />
                     </a>
                 </div>

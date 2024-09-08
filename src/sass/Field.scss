@@ -1,21 +1,35 @@
 // Field.scss
-.form-group {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+.form-row {
+  margin-bottom: 18px;
+
+  &--group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .form-row {
+      width: calc(50% - 8px);
+
+
+      @media(max-width:450px) {
+        width: 100%;
+      }
+    }
+
+  }
   
   label {
     font-family: 'Inter';
     color: #fff;
-    margin-left: 10px;
     font-size: 0.9em;
+    display: block;
+    margin-bottom:5px;
   }
 
   .form-control {
     background: #EEEEEE;
     border-radius: 10px;
-    height: 30px;
+    height: 43px;
     transition: all 0.3s ease;
     
     &.is-invalid {

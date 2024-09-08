@@ -15,7 +15,7 @@ const TextareaField = ({
   const handleBlur = () => setIsActive(false);
 
   return (
-    <div className={`form-group ${className} ${isActive || value ? 'active' : ''}`}>
+    <div className={`form-row  ${className} ${isActive || value ? 'active' : ''}`}>
       <label htmlFor={name}>{label} *</label>
       <textarea
         name={name}

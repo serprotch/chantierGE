@@ -15,20 +15,20 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header__logo">
-                <img src={logo} alt="" />
+                <a href="#"><img src={logo} alt="logo" /></a>
             </div>
             <div>
                 <div className="header__social">
-                    <a href="" className='single-icon'>
+                    <a href="https://www.facebook.com/groupelecomplexe/" className='single-icon' target="_blank">
                         <FaFacebookF color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://www.instagram.com/groupe_empire/" className='single-icon' target="_blank">
                         <AiFillInstagram color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://twitter.com/groupe_empire" className='single-icon' target="_blank">
                         <FaTwitter color='494646' />
                     </a>
-                    <a href="" className='single-icon'>
+                    <a href="https://www.youtube.com/@groupeempire7861" className='single-icon' target="_blank">
                         <FaYoutube color='494646' />
                     </a>
                 </div>

@@ -73,7 +73,7 @@ const InputField = ({
   };
 
   return (
-    <div className={`form-group ${className} ${isActive || value ? 'active' : ''}`}>
+    <div className={`form-row  ${className} ${isActive || value ? 'active' : ''}`}>
       <label htmlFor={name}>{t(label)} *</label>
       <input
         type={type}
